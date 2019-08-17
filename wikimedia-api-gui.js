@@ -637,7 +637,9 @@ https://commons.wikimedia.org/w/api.php?action=query&generator=categorymembers&p
         zt=infoA[ii].title;
       extrastyle="";
       if(optionsO && optionsO.fontsizekey!=null && infoA[ii].categoryinfo!=null){
-        zsize = vpr.setVal(10+infoA[ii].categoryinfo[optionsO.fontsizekey]*optionsO.fontscalerange,0,10,35,vpr.setValMode.LIMIT);
+        zsize = 10+infoA[ii].categoryinfo[optionsO.fontsizekey]*optionsO.fontscalerange;
+				if(size > 35)
+					size = 35;
         extrastyle=' style="font-size:'+zsize+'px;" ';
         }
       vpr.vprint("wiki","mkPageLinks:"+zt+" type:"+typeof(infoA[ii])+" have pageid:"+infoA[ii].pageid);
