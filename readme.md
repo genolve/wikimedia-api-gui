@@ -1,13 +1,15 @@
 # wikimedia-api-gui
-==============
-
 JavaScript API+GUI fetches images from [Wikimedia](https://commons.wikimedia.org/wiki/Main_Page) and displays them in a fully functioning GUI for drop-in use in your application. Try the  [Standalone Demo](https://www.genolve.com/js/wikimedia-api/index.htm) or the [Fully Integrated Demo- click 'Get images' then click 'Wikimedia'](https://www.genolve.com/svg/en/alldesigns.php?cardtype=quotes&subtype=popular&mediatype=picture)
 
 #### Installation
 Download the files and add in html header:
 
-`<script type="text/javascript" src="wikimedia-api-gui.js"></script>
-<link type="text/css" rel="stylesheet" href="wiki-api-gui-styles.css" />`
+```
+<script type="text/javascript" src="wikimedia-api-gui.js"></script>
+<link type="text/css" rel="stylesheet" href="wiki-api-gui-styles.css" />
+```
+
+
 
 
 #### Usage
@@ -46,11 +48,11 @@ JQuery is the only requirement, any version above 2.1
 
 #### Features
 * Intelligently searches Wikimedia, falling back to opensearch if nothing is found
+* Based on search, displays links to related pages
 * Keeps a search history to quickly return to previous pages
-* Based on search, displays links to related pages 
-* Filters out images that are too small, too big or have a restricted copyright.
+* Filters out images that are too small, too big or have a restricted copyright
 
 
 
 #### Contributing
-We welcome any contributions and feedback! Just drop a note or as usual; fork, make your update, pull request.
+Contributions and feedback welcome! Just drop a note or as usual; fork, make your update, pull request.
